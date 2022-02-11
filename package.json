@@ -2,10 +2,12 @@
   "name": "variable-fonts-alba02",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "dev": "parcel src/index.html",
+    "build": "rm -f dist/* && parcel build src/index.html"
+   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RVCC-IDMX/variable-fonts-alba02.git"
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/RVCC-IDMX/variable-fonts-alba02/issues"
   },
-  "homepage": "https://github.com/RVCC-IDMX/variable-fonts-alba02#readme"
+  "homepage": "https://github.com/RVCC-IDMX/variable-fonts-alba02#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.1",
+    "sass": "^1.49.7"
+  }
 }
